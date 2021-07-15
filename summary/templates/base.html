@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+</head>
+<body>
+
+	<header>
+		<div class="container">
+    		<h2>Text summarization</h2>
+    	</div>
+	</header>
+
+	<div class="ml-container">
+		<form method=post action="/summary/summarise" enctype=multipart/form-data>
+    		<p>Enter the original text here</p>
+    		<textarea name="originalText" id="org-text" rows="6" cols="50" required></textarea>
+    		<br/>
+    		<p>Enter the number of lines in summary</p>
+    		<input name="numOfLines" type="text"></input>
+    		<input type="submit" class="btn-info" value="Summarize">
+    	</form>
+
+	</div>
+
+</body>
+</html>
